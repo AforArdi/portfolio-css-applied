@@ -1,0 +1,109 @@
+:root {
+    /* === CORE COLOR SYSTEM FOR PORTFOLIO === */
+    --clr-white: #f0f8ff;
+    --clr-dark: #1B2021;   /* Used for header & navigation background */
+    --clr-olive: #51513D;  /* Used for footer background */
+    --clr-mid: #A6A867;    /* Used for card backgrounds (skills, projects, contact) */
+    --clr-light: #E3DC95;  /* Used for main background */
+    --clr-accent: #F2EBC2; /* Used for highlights, button hovers, or active states */
+    --border-radius: 5px;
+    --margin: .5rem;
+    --padding: .5rem;
+}
+* {
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--clr-light);
+}
+
+header {
+    background-color: var(--clr-olive);
+    text-align: center;
+    border-radius: var(--border-radius);
+}
+
+#my_name::before {
+    content: "🔥 ";
+}
+#my_name::after {
+    content: " 🔥";
+}
+#p_ilivehere::before {
+  content: "⬇️ ";
+}
+#p_ilivehere::after {
+  content: " ⬇️";
+}
+
+p {
+    font-size: 1.3rem;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    margin: var(--margin);
+}
+
+table {
+    border: 1px solid var(--clr-dark);
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid var(--clr-white);
+    padding: var(--padding);
+} 
+
+nav ul li a {
+    color: var(--clr-light);
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: var(--clr-white);
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--clr-dark);
+}
+
+#pic-myself {
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.card {
+    background-color: var(--clr-mid);
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--clr-dark);
+}
+
+button {
+  background-color: #4CAF50;
+  color: var(--clr-white);
+  padding: 5px 10px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-media {
+    text-align: center;
+}
+.social-media ul {
+    padding: 0rem;
+    margin: 1rem auto;
+}
